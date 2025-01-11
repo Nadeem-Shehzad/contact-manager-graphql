@@ -12,6 +12,7 @@ export const userSchema = gql`
 
   type Query{
     getUsers: [User]
+    getUser(id:ID!): User
   }
 
 
@@ -22,8 +23,14 @@ export const userSchema = gql`
     password:String!
   }
 
+  input LoginInput{
+    email:String!
+    password:String!
+  }
+
   type Mutation{
     signUp(userData:UserInput): String
+    login(userData: LoginInput): String
   }  
 
 `;

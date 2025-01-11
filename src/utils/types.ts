@@ -5,6 +5,10 @@ export interface IUser {
     password: string;
 }
 
+export interface ILogin{
+    email:string;
+    password: string
+}
 
 export interface IContact {
     name: string;

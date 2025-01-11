@@ -1,5 +1,5 @@
-import {userResolver} from './user';
-import { contactResolver } from './contact';
+import {userResolver} from './user/userResolver';
+import { contactResolver } from './contact/contactResolver';
 
 export const resolvers = {
   Query: {

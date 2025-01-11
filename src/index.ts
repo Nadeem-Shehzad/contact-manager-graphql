@@ -3,8 +3,8 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 import dotenv from 'dotenv';
 
 import connectDB from './config/dbConnection';
-import { typeDefs } from './schema/schema';
-import { resolvers } from './resolver/resolver'
+import { typeDefs } from './schemas/allSchemas';
+import { resolvers } from './resolvers/allResolvers'
 
 dotenv.config();
 connectDB();

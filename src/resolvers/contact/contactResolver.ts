@@ -1,4 +1,5 @@
-import {mCreateContact } from './contactController';
+
+import {mCreateContact, mUpdateContact, mDeleteContact } from './contactController';
 import { qGetContact , qGetContacts} from './contactController';
 
 export const contactResolver = {
@@ -8,6 +9,8 @@ export const contactResolver = {
     },
 
     Mutation: {
-        createContact: mCreateContact
+        createContact: mCreateContact,
+        updateContact: mUpdateContact,
+        deleteContact: mDeleteContact
     }
 };

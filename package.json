@@ -15,14 +15,17 @@
     "@apollo/server": "^4.11.3",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "graphql": "^16.10.0",
     "graphql-tag": "^2.12.6",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.4",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "save": "^2.9.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.5",
     "ts-node": "^10.9.2",

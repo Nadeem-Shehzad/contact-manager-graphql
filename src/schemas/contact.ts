@@ -22,8 +22,16 @@ export const contactSchema = gql`
     phone:String!
   }
 
+  input ContactUpdateInput{
+    name:String
+    email:String
+    phone:String
+  }
+
   type Mutation {
-    createContact(contact: ContactInput): String
+    createContact(contact: ContactInput!): String
+    updateContact(contactId: String!,contact: ContactUpdateInput!): String
+    deleteContact(contactId: String): String
   }
 
 `;

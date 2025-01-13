@@ -1,4 +1,4 @@
-import {gql} from 'graphql-tag';
+import { gql } from 'graphql-tag';
 
 export const userSchema = gql`
 
@@ -10,8 +10,13 @@ export const userSchema = gql`
     password:String!
   }
 
+  type PaginatedUsers{
+    users: [User!]
+    totalUsers: Int!
+  }
+
   type Query{
-    getUsers: [User]
+    getUsers(page:Int!,limit:Int!): PaginatedUsers
     getUser(id:ID!): User
   }
 

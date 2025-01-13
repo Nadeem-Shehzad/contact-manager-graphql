@@ -1,18 +1,19 @@
-This project implements a GraphQL API with the following features:
+Project Overview
+This project implements a comprehensive GraphQL API with the following key features:
 
-User Authentication:
-User registration and login.
+Features
+1. User Authentication
+User registration and login functionality.
 Secure authentication using JSON Web Tokens (JWT).
-Password hashing and comparison using bcrypt.
-Data Persistence:
-Data modeling and persistence using Mongoose and MongoDB.
-Caching:
-Improved performance and reduced database load using Redis for caching.
-GraphQL API:
-Exposes a GraphQL API for interacting with data.
-Includes resolvers for data fetching and mutation.
-Key Technologies:
-
+Password hashing and comparison with bcrypt for enhanced security.
+2. Data Persistence
+Efficient data modeling and persistence using Mongoose and MongoDB.
+3. Caching
+Improved performance and reduced database load by leveraging Redis for caching and session management.
+4. GraphQL API
+Fully functional GraphQL API for data interaction.
+Includes resolvers for data fetching and mutation operations.
+Key Technologies
 Node.js
 Express.js
 GraphQL

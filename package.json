@@ -21,13 +21,17 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.4",
     "nodemon": "^3.1.9",
+    "redis": "^4.7.0",
     "save": "^2.9.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
+    "@types/ioredis": "^4.28.10",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.5",
+    "@types/redis": "^4.0.10",
+    "ioredis": "^5.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }

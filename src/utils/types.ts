@@ -23,6 +23,15 @@ export interface IContact {
 }
 
 
+export interface IContactE {
+    _id: string,
+    name: string;
+    email: string;
+    phone: string;
+    user_id: mongoose.Schema.Types.ObjectId;
+}
+
+
 export interface CustomJWTPayload extends JwtPayload {
     userId: string;
     email: string;
@@ -32,4 +41,9 @@ export interface CustomJWTPayload extends JwtPayload {
 export interface MyContext {
     userId?: string;
     email?: string;
+}
+
+export interface ScanResult {
+    cursor: number;
+    keys: string[];
 }

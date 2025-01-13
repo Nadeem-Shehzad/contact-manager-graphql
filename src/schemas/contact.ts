@@ -10,8 +10,13 @@ export const contactSchema = gql`
     phone:String!
   }
 
+  type PaginatedContacts{
+    contacts: [Contact!]
+    totalContacts: Int!
+  }
+
   type Query {
-    getContacts: [Contact]
+    getContacts(page: Int!, limit: Int!): PaginatedContacts
     getContact(_id:ID!): Contact
   }
 
